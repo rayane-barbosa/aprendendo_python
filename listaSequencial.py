@@ -89,3 +89,6 @@ class ListaSequencial:
 
      # Verifica o tamanho da lista após limpar
     print("O tamanho da lista após limpar é", lista.tamanho_lista())
+
+    if __name__ == '__main__':
+      main()
