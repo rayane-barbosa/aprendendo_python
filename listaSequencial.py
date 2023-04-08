@@ -45,3 +45,47 @@ class ListaSequencial:
     #Remove todos os elementos da lista e zera o tamanho
     self.lista.clear()
     self.tamanho =0
+
+
+    def main():
+    # Cria uma nova lista sequencial
+    lista = ListaSequencial()
+
+    # Adiciona alguns valores à lista
+    lista.adiciona('a')
+    lista.adiciona('b')
+    lista.adiciona('c')
+    lista.adiciona('d')
+    lista.adiciona('e')
+    
+    # Imprime a lista
+    print("Lista: ", lista)
+
+    # Verifica se um valor está presente na lista
+    print("A lista contém o valor a?", lista.contem('a'))
+    print("A lista contém o valor 4?", lista.contem(4))
+
+    # Obtém o índice de um valor na lista
+    print("O índice do valor a é", lista.indice('a'))
+    print("O índice do valor 4 é", lista.indice(4))
+
+    # Obtém o tamanho da lista
+    print("O tamanho da lista é", lista.tamanho_lista())
+
+    # Obtém um elemento da lista
+    print("O elemento na posição 1 é", lista.obtem_elemento(1))
+
+    # Remove um valor da lista
+    lista.remove('c')
+
+    # Imprime a lista atualizada
+    print("Lista atualizada: ", lista)
+
+    # Verifica o tamanho atual
+    print("O tamanho atual da lista", lista.tamanho_lista())
+
+    # Limpa a lista
+    lista.limpa_lista()
+
+     # Verifica o tamanho da lista após limpar
+    print("O tamanho da lista após limpar é", lista.tamanho_lista())
